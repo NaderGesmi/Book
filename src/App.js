@@ -3,13 +3,10 @@ import './index.css';
 import Books from './components/books';
 import Addbook from './components/AddBook';
 import EditBook from './components/EditBook';
+import { bookData } from './components/data';
 function App() {
 
-  const bookData = [
-    { id: 1, name: 'one piece', author: 'eichiro odaa', categorie: 'categorie1'},
-    { id: 2, name: 'naruto', author: 'ùmpohamed', categorie: 'categorie2'},
-    { id: 2, name: 'death note', author: 'imed', categorie: 'categorie3'}
-  ]
+
   const formState = {id:null, name:'', author:'', categorie:''}
   const [books, setBooks] = useState(bookData);
   const [edit, setEdit] = useState(false);
